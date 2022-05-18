@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recreação  e Laser</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body background="img/img.jpg">
+  <header id="header">
+    <a id="logo" href="index.html">Projeto de Recreação</a>
+    <div>
+      <img id="image-logo" src="img/logo.jpg">
+      <span>ARRAIÁ CIDADE DA CRIANÇA</span>
+    </div>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="traços"></span>
+      </button>
+      <ul id="menu" role="menu">      
+        <li><a href="intro.html">Introdução</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="brincaderas.html">Brincadeiras e Jogos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+    <div class="container">
+      <h2>Entre em contato conosco</h2>
+      <ul>
+        <li>Email: eliseufcorrea2206@gmail.com</li>
+        <li>Email: nicolasdiass2002@gmail.com</li>
+        <li>Email: rosarenan016@gmail.com</li>
+        <li>Email: pachecohigor71@gmail.com</li>
+        <li>Email: yaasoliveira4321@gmail.com</li>
+        <br>
+        <form class="contact-form" action="https://formsubmit.co/eliseufcorrea2206@gmail.com" method="POST">
+          <div>
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" required>
+              <label for="message">Mensagem:</label>
+              <input type="text" id="message" name="message" required>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+              <input type="hidden" name="_subject" value="Novo envio!">
+              <button type="submit">Enviar</button>
+          </div>
+      </form>
+        <br><br>
+        <li>Telefone: <a href="http://web.whatsapp.com/send?phone=5564992967183"> (64) 9 9296-7183</a></li>
+        <li>Telefone: <a href="http://web.whatsapp.com/send?phone=5564992896749"> (64) 9 9289-6749</a></li>
+        <li>Telefone: <a href="http://web.whatsapp.com/send?phone=5564996018819"> (64) 9 9601-8819</a></li>
+        <li>Telefone: <a href="http://web.whatsapp.com/send?phone=5564992603149"> (64) 9 9260-3149</a></li>
+        <li>Telefone: <a href="http://web.whatsapp.com/send?phone=5564992678803"> (64) 9 9267-8803</a></li>
+
+      </ul>
+    </div>
+  </article>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	<style>
+		.whatsapp-link {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 102px;
+			right: 150px;
+			background-color: #25d366;
+			color: #fff;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			box-shadow: 1px 1px 2px #888;
+			z-index: 1000;
+      
+		}
+		.fa-whatsapp {
+			margin-top: 16px;
+		}
+	</style>
+</head>
+<body>
+	<a class="whatsapp-link" /*href="https://web.whatsapp.com/send?phone="*/ target="_blank">
+		<i class="fa fa-whatsapp"></i>
+</body>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+:root {
+  --verde: rgb(25, 211, 34);
+
+}
+
+
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-size: 1.5rem;
+  color: var(--verde);
+  font-weight: bold;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFF;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+  color: var(--verde);
+}
+
+#btn-mobile {
+  display: none;
+}
+
+#header div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#header div span {
+  font-weight: bold;
+  color: var(--verde);
+}
+
+#image-logo {
+  height: 100%;
+  margin-right: 10px;
+}
+
+article {
+  display: flex;
+  margin-top: 20px;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.container {
+  background-color: #FFF;
+  padding: 20px;
+  width: 80%;
+  border-radius: 50px;
+}
+
+.contact-form input{
+  width: 1000px;
+  padding: 8px 0px;
+  margin: 8px 0px;
+}
+
+.contact-form input[type=text] {
+  height: 70px;
+  
+}
+
+.contact-form button input{
+  color: black;
+  background-color: #e7e7e7;
+  border: none;
+  width: 95px;
+  height: 30px;
+}
+
+.imagem-dupla {
+  display: flex;
+  justify-content: center;
+}
+
+.imagem-dupla img {
+  width: 50%;
+  margin: 10px;
+  max-height: 500px;
+}
+
+article ul {
+  margin: 0 50px;
+}
+
+.container h2 {
+  margin-top: 10px;
+  margin-left: 40px;
+  color: var(--verde);
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #traços {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #traços::after,
+  #traços::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #traços {
+    border-top-color: transparent;
+  }
+  #nav.active #traços::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #traços::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
